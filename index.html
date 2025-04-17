@@ -75,21 +75,25 @@ nav a:hover {
       font-size: 1.1rem;
       margin: auto;
     }
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      flex: 1 1 280px;
-      max-width: 300px;
-    }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
     .card h3 {
       margin-top: 0;
       color: #0079b8;
@@ -108,8 +112,7 @@ nav a:hover {
   }
 
   .card {
-    width: 100%;
-    max-width: 90%;
+    width: 90%;
   }
 
   .hero h2 {
