@@ -3,27 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscripción - EAMAB VIII</title>
+  <title>Envío de Abstracts - EAMAB VIII</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    nav {
-      background-color: #ffffff;
-      border-bottom: 1px solid #ddd;
-      padding: 0.75rem 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-    nav a {
-      color: #004e7c;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 0.5rem 0.75rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -49,13 +31,15 @@
       border-bottom: 1px solid #ddd;
       padding: 0.75rem 1rem;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 1.5rem;
+      gap: 1rem;
     }
     nav a {
       color: #004e7c;
       text-decoration: none;
       font-weight: bold;
+      padding: 0.5rem 0.75rem;
     }
     nav a:hover {
       text-decoration: underline;
@@ -70,23 +54,20 @@
       border-bottom: 2px solid #004e7c;
       padding-bottom: 0.5rem;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-      background: white;
+    ul {
+      padding-left: 1.5rem;
     }
-    th, td {
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      text-align: left;
-    }
-    th {
+    .callout {
       background-color: #eaf4fb;
+      padding: 1rem;
+      border-left: 4px solid #0079b8;
+      margin: 1rem 0;
+      border-radius: 4px;
     }
     .boton {
       display: inline-block;
       margin-top: 1rem;
+      margin-right: 1rem;
       padding: 0.75rem 1.5rem;
       background-color: #004e7c;
       color: white;
@@ -105,8 +86,8 @@
 <body>
 
   <header>
-    <h1>Inscripción</h1>
-    <p>Participá del Encuentro Argentino de Materia Blanda</p>
+    <h1>Envío de Abstracts</h1>
+    <p>Fecha límite: 1 de julio de 2025</p>
   </header>
 
   <nav>
@@ -121,39 +102,23 @@
   </nav>
 
   <section>
-    <h2>Modalidades de inscripción</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Modalidad</th>
-          <th>Incluye</th>
-          <th>Tarifa (ARS)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>RAFA + EAMAB</td>
-          <td>Charlas plenarias, talleres, materiales digitales, coffee breaks</td>
-          <td>110.000</td>
-        </tr>
-        <tr>
-          <td>Solo EAMAB</td>
-          <td>Talleres EAMAB, materiales digitales, coffee breaks</td>
-          <td>80.000</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p><strong>Estudiantes de grado:</strong> descuento del 30% (se solicitará acreditación).</p>
-
-    <a href="https://forms.gle/3YLeWdvctbbGRCgi8" class="boton" target="_blank">Ir al formulario de inscripción</a>
-
-    <h2>Métodos de pago</h2>
+    <h2>Instrucciones para el envío</h2>
     <ul>
-      <li>Transferencia bancaria (CBU será enviado por correo electrónico una vez completado el formulario).</li>
-      <li>Pago con tarjeta (próximamente habilitado).</li>
-      <li>Pago institucional con factura A (solicitar por email a eamab2025@inifta.unlp.edu.ar).</li>
+      <li>Descargue la plantilla oficial del resumen (máx. 1 página A4, formato PDF).</li>
+      <li>Complete su abstract respetando el formato indicado (título, autores, afiliaciones, texto principal y referencias).</li>
+      <li>Suba el archivo a través del formulario de carga.</li>
+      <li>Recibirá un correo electrónico de confirmación automática.</li>
     </ul>
+    <a href="#" class="boton">Descargar plantilla</a>
+    <a href="https://forms.gle/3YLeWdvctbbGRCgi8" class="boton" target="_blank">Enviar abstract</a>
+  </section>
+
+  <section>
+    <h2>Modalidades de presentación</h2>
+    <div class="callout">
+      <p><strong>Comunicaciones orales:</strong> 15 minutos de exposición + 5 minutos de preguntas.</p>
+      <p><strong>Pósters digitales:</strong> Formato horizontal (16:9), con exposición en sesión sincrónica.</p>
+    </div>
   </section>
 
   <footer>
