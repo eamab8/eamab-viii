@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cronograma - EAMAB VIII</title>
+  <title>Certificados - EAMAB VIII</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -28,32 +28,57 @@
     }
     section {
       padding: 2rem;
-      max-width: 1000px;
+      max-width: 800px;
       margin: auto;
     }
     h2 {
       color: #004e7c;
       border-bottom: 2px solid #004e7c;
       padding-bottom: 0.5rem;
-      margin-top: 2rem;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-    th, td {
-      padding: 0.75rem;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-    th {
+    .info {
       background-color: #eaf4fb;
-      color: #004e7c;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 1rem;
     }
+    .info p {
+      margin: 0.5rem 0;
+    }
+    nav {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 0.75rem 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: #004e7c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 0.75rem 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: #004e7c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       background-color: #004e7c;
       color: white;
@@ -70,39 +95,41 @@
     <p>Actividades del 18 y 19 de septiembre de 2025</p>
   </header>
 
-  <section>
-    <h2>Jueves 18 de septiembre</h2>
-    <table>
-      <tr><th>Hora</th><th>Actividad</th></tr>
-      <tr><td>09:00</td><td>Registro</td></tr>
-      <tr><td>09:20</td><td>Apertura</td></tr>
-      <tr><td>09:30</td><td>Charla 1</td></tr>
-      <tr><td>10:10</td><td>Charla 2</td></tr>
-      <tr><td>10:50</td><td>Coffee Break</td></tr>
-      <tr><td>11:10</td><td>Charla 3</td></tr>
-      <tr><td>11:50</td><td>Charla 4</td></tr>
-      <tr><td>12:30</td><td>Corte para almuerzo</td></tr>
-      <tr><td>14:00</td><td>Charla 5</td></tr>
-      <tr><td>14:40</td><td>Charla 6</td></tr>
-      <tr><td>15:20</td><td>Coffee Break</td></tr>
-      <tr><td>15:40</td><td>Charlas Cortas (x5)</td></tr>
-      <tr><td>17:30</td><td>Sesión de Posters</td></tr>
-    </table>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="inscripcion.html">Inscripción</a>
+    <a href="lugar.html">Lugar</a>
+    <a href="conferencistas.html">Conferencistas</a>
+    <a href="abstracts.html">Abstracts</a>
+    <a href="cronograma.html">Cronograma</a>
+    <a href="comite.html">Comité</a>
+    <a href="certificados.html">Certificados</a>
+  </nav>
 
-    <h2>Viernes 19 de septiembre</h2>
-    <table>
-      <tr><th>Hora</th><th>Actividad</th></tr>
-      <tr><td>09:30</td><td>Charla 7</td></tr>
-      <tr><td>10:10</td><td>Charla 8</td></tr>
-      <tr><td>10:50</td><td>Coffee Break</td></tr>
-      <tr><td>11:10</td><td>Charla 9</td></tr>
-      <tr><td>11:50</td><td>Charla 10</td></tr>
-      <tr><td>12:30</td><td>Corte para almuerzo</td></tr>
-      <tr><td>14:00</td><td>Charlas Cortas (x5)</td></tr>
-      <tr><td>15:30</td><td>Coffee Break</td></tr>
-      <tr><td>15:40</td><td>Mesa Redonda – Startups Argentinas de Soft Matter</td></tr>
-      <tr><td>17:00</td><td>Entrega de premios</td></tr>
-    </table>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="inscripcion.html">Inscripción</a>
+    <a href="lugar.html">Lugar</a>
+    <a href="conferencistas.html">Conferencistas</a>
+    <a href="abstracts.html">Abstracts</a>
+    <a href="cronograma.html">Cronograma</a>
+    <a href="comite.html">Comité</a>
+    <a href="certificados.html">Certificados</a>
+  </nav>
+
+  <section>
+    <h2>Entrega de certificados</h2>
+    <div class="info">
+      <p>Los certificados estarán disponibles en formato <strong>PDF</strong> con firma electrónica.</p>
+      <p>Se enviarán por correo electrónico durante la semana posterior al evento.</p>
+      <p>Los certificados incluirán:</p>
+      <ul>
+        <li>Participación como asistente</li>
+        <li>Presentación oral o póster (si aplica)</li>
+        <li>Participación en talleres de la Escuela EAMAB</li>
+      </ul>
+      <p>Si necesitás una copia impresa, podrás retirarla en la mesa de acreditación el último día del encuentro.</p>
+    </div>
   </section>
 
   <footer>
