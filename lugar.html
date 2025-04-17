@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugar - EAMAB VIII</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f5f7fa;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #004e7c, #0079b8);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #004e7c;
+      border-bottom: 2px solid #004e7c;
+      padding-bottom: 0.5rem;
+    }
+    .mapa {
+      margin-top: 1rem;
+      border: none;
+      width: 100%;
+      height: 400px;
+      border-radius: 8px;
+    }
+    .listado {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .columna {
+      flex: 1;
+      min-width: 280px;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      background-color: #004e7c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lugar del Encuentro</h1>
+    <p>Edificio Sergio Karakachoff, Universidad Nacional de La Plata</p>
+  </header>
+
+  <section>
+    <h2>Ubicación</h2>
+    <p>El EAMAB VIII se llevará a cabo en el <strong>Edificio Sergio Karakachoff</strong>, ubicado en Calle 48 N.º 551 (entre 6 y 7), en el centro de la ciudad de La Plata, Argentina.</p>
+    <iframe class="mapa" src="https://maps.google.com/maps?q=Edificio%20Sergio%20Karakachoff&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+  </section>
+
+  <section>
+    <h2>Alojamiento y Gastronomía</h2>
+    <div class="listado">
+      <div class="columna">
+        <h3>Hoteles recomendados</h3>
+        <ul>
+          <li>Grand Brizo La Plata ★★★★</li>
+          <li>Hotel San Marco ★★★</li>
+          <li>Howard Johnson La Plata ★★★★</li>
+          <li>Hotel del Sol ★★★</li>
+        </ul>
+      </div>
+      <div class="columna">
+        <h3>Restaurantes sugeridos</h3>
+        <ul>
+          <li>Simona (cerveza artesanal y tapeo)</li>
+          <li>Los Fuegos (parrilla, City Bell)</li>
+          <li>Cortez (fusión argentina)</li>
+          <li>Nina (cocina contemporánea)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 EAMAB VIII · La Plata
+  </footer>
+
+</body>
+</html>
