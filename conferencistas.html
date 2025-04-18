@@ -3,25 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conferencistas - EAMAB VIII</title>
+  <title>Conferencistas – MAB VIII</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
 
-<link rel="stylesheet" href="estilos.css">
-
+  <!-- Ajustes locales para la disposición horizontal -->
+  <style>
+    .grid {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;   /* centra horizontalmente */
+      flex-wrap: wrap;           /* permite salto de línea en móviles */
+      margin-top: 2rem;
+    }
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.1);
+      text-align: center;
+      width: 220px;              /* ancho fijo compacto */
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <img src="Logo_Blanco.png" alt="MAB VIII logo" class="logo">
-    <h1>MAB VIII-Conferencistas Invitados</h1>
-    <p>Charlas invitadas</p>
+    <img src="Logo_Blanco.png" alt="MAB VIII logo" class="logo">
+    <div>
+      <h1>MAB VIII – Conferencistas Invitados</h1>
+      <p>Charlas invitadas</p>
+    </div>
   </header>
 
   <nav>
     <a href="index.html">Inicio</a>
     <a href="inscripcion.html">Inscripción</a>
     <a href="lugar.html">Lugar</a>
-    <a href="conferencistas.html">Conferencistas</a>
+    <a href="conferencistas.html" class="active">Conferencistas</a>
     <a href="abstracts.html">Abstracts</a>
     <a href="cronograma.html">Cronograma</a>
     <a href="comite.html">Comité</a>
@@ -30,28 +50,32 @@
 
   <section>
     <h2>Listado de conferencistas</h2>
+
     <div class="grid">
       <div class="card">
-        <h3>Mateus Cardoso</h3>
-        <p>LNLS-Sirius<br>Brasil</p>
+        <h3>Mateus Cardoso</h3>
+        <p>LNLS‑Sirius<br>Brasil</p>
       </div>
+
       <div class="card">
-        <h3>Ana Beloqui</h3>
+        <h3>Ana Beloqui</h3>
         <p>POLYMAT (UPV/EHU)<br>España</p>
       </div>
+
       <div class="card">
-        <h3>Verónica Marconi</h3>
-        <p>FaMAF - UNC<br>Argentina</p>
+        <h3>Verónica Marconi</h3>
+        <p>FaMAF ‑ UNC<br>Argentina</p>
       </div>
+
       <div class="card">
-        <h3>Hernán Ritacco</h3>
-        <p>Universidad Nacional del Sur<br>Argentina</p>
+        <h3>Hernán Ritacco</h3>
+        <p>Universidad Nacional del Sur<br>Argentina</p>
       </div>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 EAMAB VIII · La Plata
+    &copy; 2025 MAB VIII · La Plata
   </footer>
 
 </body>
