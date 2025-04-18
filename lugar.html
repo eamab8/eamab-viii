@@ -3,23 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lugar - EAMAB VIII</title>
+  <title>Lugar – MAB VIII</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
 
-<link rel="stylesheet" href="estilos.css">
-
+  <!-- Estilo local para el iframe de Google Maps -->
+  <style>
+    .mapa{
+      width:100%;
+      height:500px;       /* más alto que antes */
+      border:0;
+      border-radius:8px;
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <h1>Lugar del Encuentro</h1>
-    <p>Edificio Sergio Karakachoff, Universidad Nacional de La Plata</p>
+    <!-- LOGO -->
+    <img src="Logo_Blanco.png" alt="MAB VIII logo" class="logo">
+
+    <div>
+      <h1>Lugar del Encuentro</h1>
+      <p>Edificio Sergio Karakachoff · Universidad Nacional de La Plata</p>
+    </div>
   </header>
 
   <nav>
     <a href="index.html">Inicio</a>
     <a href="inscripcion.html">Inscripción</a>
-    <a href="lugar.html">Lugar</a>
+    <a href="lugar.html" class="active">Lugar</a>
     <a href="conferencistas.html">Conferencistas</a>
     <a href="abstracts.html">Abstracts</a>
     <a href="cronograma.html">Cronograma</a>
@@ -29,36 +43,46 @@
 
   <section>
     <h2>Ubicación</h2>
-    <p>El EAMAB VIII se llevará a cabo en el <strong>Edificio Sergio Karakachoff</strong>, ubicado en Calle 48 N.º 551 (entre 6 y 7), en el centro de la ciudad de La Plata, Argentina.</p>
-    <iframe class="mapa" src="https://maps.google.com/maps?q=Edificio%20Sergio%20Karakachoff&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+    <p>
+      El MAB VIII se llevará a cabo en el <strong>Edificio Sergio Karakachoff</strong>,
+      Calle 48 N.º 551 (entre 6 y 7), ciudad de La Plata, Argentina.
+    </p>
+
+    <!-- Google Maps más grande -->
+    <iframe class="mapa"
+            src="https://maps.google.com/maps?q=Edificio%20Sergio%20Karakachoff&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy">
+    </iframe>
   </section>
 
   <section>
     <h2>Alojamiento y Gastronomía</h2>
+
     <div class="listado">
       <div class="columna">
         <h3>Hoteles recomendados</h3>
         <ul>
-          <li>Grand Brizo La Plata ★★★★</li>
-          <li>Hotel San Marco ★★★</li>
-          <li>Howard Johnson La Plata ★★★★</li>
-          <li>Hotel del Sol ★★★</li>
+          <li>Grand Brizo La Plata ★★★★</li>
+          <li>Hotel San Marco ★★★</li>
+          <li>Howard Johnson La Plata ★★★★</li>
+          <li>Hotel del Sol ★★★</li>
         </ul>
       </div>
+
       <div class="columna">
         <h3>Restaurantes sugeridos</h3>
         <ul>
-          <li>Simona (cerveza artesanal y tapeo)</li>
-          <li>Los Fuegos (parrilla, City Bell)</li>
-          <li>Cortez (fusión argentina)</li>
-          <li>Nina (cocina contemporánea)</li>
+          <li>Simona – cerveza artesanal y tapeo</li>
+          <li>Los Fuegos – parrilla (City Bell)</li>
+          <li>Cortez – fusión argentina</li>
+          <li>Nina – cocina contemporánea</li>
         </ul>
       </div>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 EAMAB VIII · La Plata
+    &copy; 2025 MAB VIII · La Plata
   </footer>
 
 </body>
