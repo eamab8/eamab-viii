@@ -10,21 +10,31 @@
 
   <!-- Ajustes locales para la disposición horizontal -->
   <style>
-    .grid {
-      display: flex;
-      gap: 1.5rem;
-      justify-content: center;   /* centra horizontalmente */
-      flex-wrap: wrap;           /* permite salto de línea en móviles */
-      margin-top: 2rem;
-    }
-    .card {
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,.1);
-      text-align: center;
-      width: 220px;              /* ancho fijo compacto */
-    }
+/* grid y tarjeta */
+.grid{
+  display:flex;
+  gap:1.5rem;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:2rem;
+}
+.card{
+  background:#fff;
+  padding:1.5rem;
+  border-radius:8px;
+  box-shadow:0 2px 6px rgba(0,0,0,.1);
+  text-align:center;
+  width:240px;           /* más ancho */
+}
+.card h3{
+  font-size:1rem;        /* texto levemente más chico */
+  margin-bottom:0.3rem;
+}
+.card p{
+  margin:0;
+  word-break:break-word; /* permite cortar palabras largas */
+}
+
   </style>
 </head>
 <body>
