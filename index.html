@@ -10,25 +10,47 @@
 
   <!-- Ajustes locales -->
   <style>
-    header{ text-align:left; padding-left:5vw; }
+    header {
+      text-align: left;
+      padding-left: 5vw;
+    }
+
+    /* logo más grande solo en el index */
+    body.index .logo {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
 
     /* pestaña activa */
-    nav a.active{ color:var(--azul-claro); border-bottom:3px solid var(--azul-claro); }
+    nav a.active {
+      color: var(--azul-claro);
+      border-bottom: 3px solid var(--azul-claro);
+    }
 
     /* tarjetas en fila – alineadas a la izquierda */
-    .cards{
-      display:flex;
-      justify-content:flex-start;   /* alineación izquierda */
-      flex-wrap:wrap;
-      gap:1.5rem;
+    .cards {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 1.5rem;
     }
-    .card{ max-width:500px; }
 
-    .fechas li{ margin-bottom:.4rem; }
-    .fechas strong{ font-weight:700; }
+    .card {
+      max-width: 500px;
+    }
+
+    .fechas li {
+      margin-bottom: .4rem;
+    }
+
+    .fechas strong {
+      font-weight: 700;
+    }
   </style>
 </head>
-<body>
+
+<body class="index">
 
   <header>
     <img src="Logo_Blanco.png" alt="MAB VIII logo" class="logo">
@@ -63,7 +85,6 @@
       <ul class="fechas">
         <li><strong>Envío de abstracts:</strong> hasta 1 de julio</li>
         <li><strong>Notificación:</strong> 1 de agosto</li>
-
       </ul>
     </div>
 
