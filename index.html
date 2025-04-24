@@ -10,58 +10,53 @@
 
   <style>
     /* —————————————————————————————
-       ÚNICAS modificaciones
+       Ajustes SOLO para ocupar todo el ancho
        ————————————————————————————— */
-    /* 1) Contenedores centrados en pantalla */
+
+    /* 1) Elimina márgenes laterales y anchos máximos */
     header, .hero, .cards, footer {
-      max-width: 1200px;
-      margin: 0 auto;
       width: 100%;
+      margin: 0;
+      padding: 0;           /* sin espacios a los costados */
     }
 
-    /* 2) Centrar el contenido interno del header */
+    /* 2) Header centrado horizontalmente */
     header {
       text-align: center;
-      padding-left: 0;
+      padding-top: 1rem;    /* mantiene espacio superior */
     }
 
-    /* 3) Centrar texto de la sección principal */
-    .hero {
-      text-align: center;
-    }
-
-    /* 4) Centrar las tarjetas */
-    .cards {
-      display: flex;
-      justify-content: center;   /* ahora centradas */
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-
-    /* 5) Menú distribuido a todo el ancho */
+    /* 3) Menú: enlaces repartidos en todo el ancho */
     nav {
       width: 100%;
       display: flex;
       justify-content: space-around;
     }
-    /* ————————————————————————————— */
-    
-    /* Tu CSS original sigue igual */
-    /* pestaña activa */
+
+    /* 4) Hero centrado */
+    .hero {
+      text-align: center;
+    }
+
+    /* 5) Tarjetas: que llenen la fila completa */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1.5rem;
+    }
+    .card {
+      flex: 1 1 300px;      /* se adaptan; cada una ocupa parte proporcional */
+      max-width: 400px;
+    }
+
+    /* Resto de estilos originales (sin cambios) */
     nav a.active {
       color: var(--azul-claro);
       border-bottom: 3px solid var(--azul-claro);
     }
-
-    .card {
-      max-width: 500px;
-    }
-    .fechas li {
-      margin-bottom: .4rem;
-    }
-    .fechas strong {
-      font-weight: 700;
-    }
+    .fechas li { margin-bottom: .4rem; }
+    .fechas strong { font-weight: 700; }
   </style>
 </head>
 <body>
