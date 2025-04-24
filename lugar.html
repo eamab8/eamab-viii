@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,7 +18,7 @@
     body {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; /* distribuye header, nav, secciones y footer */
+      justify-content: space-between;
     }
     header, nav, section, footer {
       width: 100%;
@@ -25,17 +26,19 @@
       padding: 0;
     }
 
-    /* Header centrado */
+    /* Header con contenido justificado a la izquierda */
     header {
       display: flex;
-      flex-direction: column;
       align-items: center;
+      justify-content: flex-start;  /* alinea todo a la izquierda */
       padding: 1rem 2%;
-      text-align: center;
     }
     header .logo {
       max-height: 60px;
-      margin-bottom: 0.5rem;
+      margin-right: 1rem;
+    }
+    header div {
+      text-align: left;            /* texto alineado a la izquierda */
     }
 
     /* Menú repartido a lo ancho */
@@ -154,3 +157,4 @@
 
 </body>
 </html>
+```
