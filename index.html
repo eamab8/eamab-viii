@@ -3,88 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAB VIII – La Plata 2025</title>
+  <title>MAB VIII – La Plata 2025</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
 
+  <!-- Ajustes locales -->
   <style>
-    /* —————————————————————————————
-       Ajustes SOLO para ocupar todo el ancho
-       ————————————————————————————— */
+    header{ text-align:left; padding-left:5vw; }
 
-    /* 1) Elimina márgenes laterales y anchos máximos */
-    header, .hero, .cards, footer {
-      width: 100%;
-      margin: 0;
-      padding: 0;           /* sin espacios a los costados */
+    /* pestaña activa */
+    nav a.active{ color:var(--azul-claro); border-bottom:3px solid var(--azul-claro); }
+
+    /* tarjetas en fila – alineadas a la izquierda */
+    .cards{
+      display:flex;
+      justify-content:flex-start;   /* alineación izquierda */
+      flex-wrap:wrap;
+      gap:1.5rem;
     }
+    .card{ max-width:500px; }
 
-    /* 2) Header centrado horizontalmente */
-    header {
-      text-align: center;
-      padding-top: 1rem;    /* mantiene espacio superior */
-    }
-
-    /* 3) Menú: enlaces repartidos en todo el ancho */
-    nav {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-    }
-
-    /* 4) Hero centrado */
-    .hero {
-      text-align: center;
-    }
-/* Centrar el texto del párrafo de la sección hero */
-.hero p{
-  text-align:center;   /* alinear el contenido */
-  margin:0 auto;       /* centrar el bloque dentro de la sección */
-}
-
-    /* 5) Tarjetas: que llenen la fila completa */
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 1.5rem;
-    }
-    .card {
-      flex: 1 1 300px;      /* se adaptan; cada una ocupa parte proporcional */
-      max-width: 400px;
-    }
-
-    /* Resto de estilos originales (sin cambios) */
-    nav a.active {
-      color: var(--azul-claro);
-      border-bottom: 3px solid var(--azul-claro);
-    }
-    .fechas li { margin-bottom: .4rem; }
-    .fechas strong { font-weight: 700; }
-
-    /* ocupa toda la altura de la ventana y reparte los hijos verticalmente */
-html, body{
-  height:100%;              /* necesario para que 100 % sea la altura real */
-}
-
-body{
-  display:flex;             /* activa Flexbox en columna */
-  flex-direction:column;
-  justify-content:space-between;  /* coloca el primero arriba, el último abajo
-                                     y distribuye el resto con espacios iguales */
-  margin:0;                 /* por si hubiera márgenes del user-agent */
-}
-
+    .fechas li{ margin-bottom:.4rem; }
+    .fechas strong{ font-weight:700; }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="Logo_Blanco.png" alt="MAB VIII logo" class="logo">
+    <img src="Logo_Blanco.png" alt="MAB VIII logo" class="logo">
     <div>
-      <h1>MAB VIII</h1>
-      <p>Encuentro Argentino de Materia Blanda – La Plata, 18 y 19 de septiembre de 2025</p>
+      <h1>MAB VIII</h1>
+      <p>Encuentro Argentino de Materia Blanda – La Plata, 18 y 19 de septiembre de 2025</p>
     </div>
   </header>
 
@@ -100,10 +50,10 @@ body{
   </nav>
 
   <section class="hero" id="inicio">
-    <h2>Bienvenidos al MAB VIII</h2>
+    <h2>Bienvenidos al MAB VIII</h2>
     <p>
-      El Encuentro Argentino de Materia Blanda (MAB VIII) es un espacio de intercambio académico y científico dedicado a materiales blandos, física y química de sistemas complejos y nanotecnología aplicada.  
-      Nos reuniremos en la ciudad de La Plata los días <strong>18 y 19 de septiembre de 2025</strong>.
+      El Encuentro Argentino de Materia Blanda (MAB VIII) es un espacio de intercambio académico y científico dedicado a materiales blandos, física y química de sistemas complejos y nanotecnología aplicada.  
+      Nos reuniremos en la ciudad de La Plata los días <strong>18 y 19 de septiembre de 2025</strong>.
     </p>
   </section>
 
@@ -111,15 +61,15 @@ body{
     <div class="card">
       <h3>Fechas importantes</h3>
       <ul class="fechas">
-        <li><strong>Envío de abstracts:</strong> hasta 1 de julio</li>
-        <li><strong>Notificación:</strong> 1 de agosto</li>
+        <li><strong>Envío de abstracts:</strong> hasta 1 de julio</li>
+        <li><strong>Notificación:</strong> 1 de agosto</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>Modalidades</h3>
       <p>
-        Participá con presentaciones orales, pósters y talleres temáticos de la Escuela MAB.
+        Participá con presentaciones orales, pósters y talleres temáticos de la Escuela MAB.
       </p>
     </div>
 
@@ -127,13 +77,13 @@ body{
       <h3>Contacto</h3>
       <p>
         apicco@inifta.unlp.edu.ar<br>
-        La Plata, Argentina
+        La Plata, Argentina
       </p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 MAB VIII · La Plata
+    &copy; 2025 MAB VIII · La Plata
   </footer>
 
 </body>
