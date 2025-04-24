@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="estilos.css">
 
   <style>
-       * {
+    /* Reset global */
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -18,15 +19,14 @@
       font-family: 'Montserrat', sans-serif;
     }
 
-    /* Header a lo ancho sin fondo para que el logo destaque */
+    /* Header a lo ancho */
     header {
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-between; /* logo a la izq, texto a la der */
       padding: 1rem 2%;
-      /* fondo transparente/blanco por defecto */
-      background: white; /* o elimina esta línea para transparencia */
+      background: #f0f0f0;
     }
     header .logo {
       max-height: 60px;
@@ -42,6 +42,7 @@
       justify-content: space-around;
       background: var(--azul-oscuro, #00457c);
       padding: 0.5rem 0;
+    }
     nav a {
       flex: 1;
       text-align: center;
