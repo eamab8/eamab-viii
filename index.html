@@ -62,6 +62,20 @@
     }
     .fechas li { margin-bottom: .4rem; }
     .fechas strong { font-weight: 700; }
+
+    /* ocupa toda la altura de la ventana y reparte los hijos verticalmente */
+html, body{
+  height:100%;              /* necesario para que 100 % sea la altura real */
+}
+
+body{
+  display:flex;             /* activa Flexbox en columna */
+  flex-direction:column;
+  justify-content:space-between;  /* coloca el primero arriba, el último abajo
+                                     y distribuye el resto con espacios iguales */
+  margin:0;                 /* por si hubiera márgenes del user-agent */
+}
+
   </style>
 </head>
 <body>
