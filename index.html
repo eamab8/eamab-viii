@@ -3,121 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAB VIII – La Plata 2025</title>
+  <title>MAB VIII – La Plata 2025</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
 
+  <!-- Ajustes locales -->
   <style>
-    /* Reset global */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Montserrat', sans-serif;
-    }
+    header{ text-align:left; padding-left:5vw; }
 
-    /* Header a lo ancho */
-    header {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between; /* logo a la izq, texto a la der */
-      padding: 1rem 2%;
-      background: #f0f0f0;
-    }
-    header .logo {
-      max-height: 60px;
-    }
-    header div {
-      text-align: right;
-    }
+    /* pestaña activa */
+    nav a.active{ color:var(--azul-claro); border-bottom:3px solid var(--azul-claro); }
 
-    /* Navegación a lo ancho completo */
-    nav {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      background: var(--azul-oscuro, #00457c);
-      padding: 0.5rem 0;
+    /* tarjetas en fila – alineadas a la izquierda */
+    .cards{
+      display:flex;
+      justify-content:flex-start;   /* alineación izquierda */
+      flex-wrap:wrap;
+      gap:1.5rem;
     }
-    nav a {
-      flex: 1;
-      text-align: center;
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 0;
-      font-weight: 500;
-    }
-    nav a.active {
-      color: var(--azul-claro, #4da6ff);
-      border-bottom: 3px solid var(--azul-claro, #4da6ff);
-    }
+    .card{ max-width:500px; }
 
-    /* Hero a lo ancho */
-    .hero {
-      width: 100%;
-      padding: 2rem 2%;
-      background: #e6f2ff;
-      text-align: center;
-    }
-    .hero h2 {
-      margin-bottom: 0.5rem;
-    }
-    .hero p {
-      line-height: 1.5;
-      max-width: 90%;
-      margin: 0 auto;
-    }
-
-    /* Cards distribuidas uniformemente */
-    .cards {
-      width: 100%;
-      display: flex;
-      justify-content: space-between; /* espacio completo */
-      flex-wrap: wrap;
-      padding: 2rem 2%;
-      gap: 1.5rem;
-    }
-    .card {
-      flex: 1 1 calc(33% - 1rem);
-      /* Si hay menos de 3, se ajusta; si hay más, baja a siguiente fila */
-      background: #fafafa;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .card h3 {
-      margin-bottom: 0.5rem;
-    }
-    .fechas li {
-      margin-bottom: 0.4rem;
-    }
-    .fechas strong {
-      font-weight: 700;
-    }
-
-    /* Footer a lo ancho */
-    footer {
-      width: 100%;
-      padding: 1rem 2%;
-      text-align: center;
-      background: #f0f0f0;
-      font-size: 0.9rem;
-      color: #555;
-    }
+    .fechas li{ margin-bottom:.4rem; }
+    .fechas strong{ font-weight:700; }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="Logo_Blanco.png" alt="MAB VIII logo" class="logo">
+    <img src="Logo_Blanco.png" alt="MAB VIII logo" class="logo">
     <div>
-      <h1>MAB VIII</h1>
-      <p>Encuentro Argentino de Materia Blanda – La Plata, 18 y 19 de septiembre de 2025</p>
+      <h1>MAB VIII</h1>
+      <p>Encuentro Argentino de Materia Blanda – La Plata, 18 y 19 de septiembre de 2025</p>
     </div>
   </header>
 
@@ -133,10 +50,10 @@
   </nav>
 
   <section class="hero" id="inicio">
-    <h2>Bienvenidos al MAB VIII</h2>
+    <h2>Bienvenidos al MAB VIII</h2>
     <p>
-      El Encuentro Argentino de Materia Blanda (MAB VIII) es un espacio de intercambio académico y científico dedicado a materiales blandos, física y química de sistemas complejos y nanotecnología aplicada.  
-      Nos reuniremos en la ciudad de La Plata los días <strong>18 y 19 de septiembre de 2025</strong>.
+      El Encuentro Argentino de Materia Blanda (MAB VIII) es un espacio de intercambio académico y científico dedicado a materiales blandos, física y química de sistemas complejos y nanotecnología aplicada.  
+      Nos reuniremos en la ciudad de La Plata los días <strong>18 y 19 de septiembre de 2025</strong>.
     </p>
   </section>
 
@@ -144,15 +61,15 @@
     <div class="card">
       <h3>Fechas importantes</h3>
       <ul class="fechas">
-        <li><strong>Envío de abstracts:</strong> hasta 1 de julio</li>
-        <li><strong>Notificación:</strong> 1 de agosto</li>
+        <li><strong>Envío de abstracts:</strong> hasta 1 de julio</li>
+        <li><strong>Notificación:</strong> 1 de agosto</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>Modalidades</h3>
       <p>
-        Participá con presentaciones orales, pósters y talleres temáticos de la Escuela MAB.
+        Participá con presentaciones orales, pósters y talleres temáticos de la Escuela MAB.
       </p>
     </div>
 
@@ -160,13 +77,13 @@
       <h3>Contacto</h3>
       <p>
         apicco@inifta.unlp.edu.ar<br>
-        La Plata, Argentina
+        La Plata, Argentina
       </p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 MAB VIII · La Plata
+    &copy; 2025 MAB VIII · La Plata
   </footer>
 
 </body>
