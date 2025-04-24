@@ -8,17 +8,40 @@
   <link rel="stylesheet" href="estilos.css">
   <style>
     /* Un solo recuadro celeste que engloba a todos los nombres */
-    .miembros {
-      background-color: #e0f4ff;
-      padding: 1rem 1.5rem;
-      border-radius: 8px;
-      list-style-position: inside;
-      max-width: 600px;
-      margin: 1rem auto;
+.miembros {
+  background-color: #e0f4ff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  list-style-position: inside;
+  max-width: 600px;
+  margin: 1rem 0;      /* quita el auto para que no se centre */
+  text-align: left;    /* fuerza justificado a la izquierda */
+}
+
+.miembros li {
+  margin-bottom: 0.4rem;
+}
+
+
+  
+        nav {
+      display: flex;
+      justify-content: space-around;
+      padding: 0.5rem 0;
     }
-    .miembros li {
-      margin-bottom: 0.4rem;
+    nav a {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      padding: 0.5rem 0;
     }
+    nav a.active {
+      color: var(--azul-claro);
+      border-bottom: 3px solid var(--azul-claro);
+    }
+     
+  
   </style>
 </head>
 <body>
