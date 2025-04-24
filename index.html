@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="estilos.css">
 
   <style>
-    /* 1. Reset de márgenes y caja para que ocupe todo el ancho */
+    /* Reset global */
     * {
       margin: 0;
       padding: 0;
@@ -19,40 +19,35 @@
       font-family: 'Montserrat', sans-serif;
     }
 
-    /* 2. Centrar todo el contenido en un "viewport" máximo */
-    header, .hero, .cards, footer {
-      max-width: 1200px;
-      margin: 0 auto;
-      width: 100%;
-      padding: 1rem;
-    }
-
-    /* 3. Cabecera: logo y título centrados */
+    /* Header a lo ancho */
     header {
+      width: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 1rem;
+      justify-content: space-between; /* logo a la izq, texto a la der */
+      padding: 1rem 2%;
+      background: #f0f0f0;
     }
     header .logo {
       max-height: 60px;
     }
-    header h1, header p {
-      text-align: center;
+    header div {
+      text-align: right;
     }
 
-    /* 4. Navegación a lo ancho y enlaces repartidos */
+    /* Navegación a lo ancho completo */
     nav {
+      width: 100%;
       display: flex;
       justify-content: space-around;
       background: var(--azul-oscuro, #00457c);
       padding: 0.5rem 0;
     }
     nav a {
-      color: white;
-      text-decoration: none;
       flex: 1;
       text-align: center;
+      color: white;
+      text-decoration: none;
       padding: 0.5rem 0;
       font-weight: 500;
     }
@@ -61,8 +56,11 @@
       border-bottom: 3px solid var(--azul-claro, #4da6ff);
     }
 
-    /* 5. Sección principal centrada */
+    /* Hero a lo ancho */
     .hero {
+      width: 100%;
+      padding: 2rem 2%;
+      background: #e6f2ff;
       text-align: center;
     }
     .hero h2 {
@@ -70,20 +68,23 @@
     }
     .hero p {
       line-height: 1.5;
+      max-width: 90%;
+      margin: 0 auto;
     }
 
-    /* 6. Tarjetas centradas y con flex-wrap */
+    /* Cards distribuidas uniformemente */
     .cards {
+      width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-between; /* espacio completo */
       flex-wrap: wrap;
+      padding: 2rem 2%;
       gap: 1.5rem;
-      padding-top: 1rem;
     }
     .card {
-      flex: 1 1 280px;
-      max-width: 400px;
-      background: #f9f9f9;
+      flex: 1 1 calc(33% - 1rem);
+      /* Si hay menos de 3, se ajusta; si hay más, baja a siguiente fila */
+      background: #fafafa;
       padding: 1rem;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -99,10 +100,12 @@
       font-weight: 700;
     }
 
-    /* 7. Pie de página centrado */
+    /* Footer a lo ancho */
     footer {
+      width: 100%;
+      padding: 1rem 2%;
       text-align: center;
-      padding: 1rem 0;
+      background: #f0f0f0;
       font-size: 0.9rem;
       color: #555;
     }
