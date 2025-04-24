@@ -10,6 +10,23 @@
 
   <!-- Ajustes locales para la disposición horizontal -->
   <style>
+
+        nav {
+      display: flex;
+      justify-content: space-around;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      padding: 0.5rem 0;
+    }
+    nav a.active {
+      color: var(--azul-claro);
+      border-bottom: 3px solid var(--azul-claro);
+    }
 /* grid y tarjeta */
 .grid{
   display:flex;
