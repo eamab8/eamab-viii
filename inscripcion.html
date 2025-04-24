@@ -3,40 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscripción – MAB VIII</title>
+  <title>Inscripción – MAB VIII</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
   <style>
-    <img src="logo.png" alt="MAB VIII logo" class="logo">
-
-    /* Ajustes locales sólo para esta página */
-    header {
-      text-align: left;
-      padding-left: 5vw;
+    /* —————————————————————————————
+       Ajustes globales para centrar y ocupar todo el ancho/alto
+       ————————————————————————————— */
+    html, body {
+      height: 100%;
+      margin: 0;
     }
-    /* tabla más fluida */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* distribuye header, nav, section, footer */
+    }
+    header, nav, section, footer {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header centrado */
+    header {
+      text-align: center;
+      padding-top: 1rem;
+    }
+
+    /* Menú repartido a lo ancho */
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+    nav a.active {
+      color: var(--azul-claro);
+      border-bottom: 3px solid var(--azul-claro);
+    }
+
+    /* Sección centrada */
+    section {
+      text-align: center;
+      padding: 1rem 2%;
+      flex: 1; /* para que la sección crezca y ayude a distribuir el espacio */
+    }
+
+    /* Tabla fluida (original) */
     table {
       width: 100%;
       border-collapse: collapse;
+      margin: 1rem auto;
     }
     thead th {
       background-color: var(--gris-callout);
     }
-    /* resaltado de descuentos */
+
+    /* Descuentos (original) */
+    .descuentos {
+      list-style: none;
+      padding: 0;
+      margin: 1rem auto;
+      max-width: 400px;
+    }
     .descuentos li {
       margin-bottom: 0.4rem;
     }
     .descuentos strong {
       color: var(--azul-claro);
     }
+
+    /* Botón de inscripción */
+    .boton {
+      display: inline-block;
+      margin: 1rem auto;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: 700;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="Logo_Blanco.png" alt="MAB VIII logo" class="logo">
-    <h1>MAB VIII – Inscripción</h1>
-    <p>Encuentro Argentino de Materia Blanda – La Plata, 18 y 19 de diciembre de 2025</p>
+    <img src="Logo_Blanco.png" alt="MAB VIII logo" class="logo">
+    <h1>MAB VIII – Inscripción</h1>
+    <p>Encuentro Argentino de Materia Blanda – La Plata, 18 y 19 de diciembre de 2025</p>
   </header>
 
   <nav>
@@ -63,12 +114,12 @@
       <tbody>
         <tr>
           <td>RAFA + MAB</td>
-          <td>Charlas, materiales digitales, coffee&nbsp;breaks</td>
+          <td>Charlas, materiales digitales, coffee breaks</td>
           <td>A confirmar</td>
         </tr>
         <tr>
-          <td> MAB</td>
-          <td>Charlas, materiales digitales, coffee&nbsp;breaks</td>
+          <td>MAB</td>
+          <td>Charlas, materiales digitales, coffee breaks</td>
           <td>A confirmar</td>
         </tr>
       </tbody>
@@ -85,7 +136,7 @@
   </section>
 
   <footer>
-    &copy; 2025 MAB VIII · La Plata
+    &copy; 2025 MAB VIII · La Plata
   </footer>
 
 </body>
