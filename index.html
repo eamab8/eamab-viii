@@ -29,15 +29,42 @@
       color: var(--azul-claro);
       border-bottom: 3px solid var(--azul-claro);
     }
-
-    /* tarjetas en fila – alineadas a la izquierda */
-    .cards{
-      display:flex;
-      justify-content:flex-start;   /* alineación izquierda */
-      flex-wrap:wrap;
-      gap:1.5rem;
+    /* 5. Sección principal centrada */
+    .hero {
+      text-align: center;
     }
-    .card{ max-width:500px; }
+    .hero h2 {
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      line-height: 1.5;
+    }
+    /* 6. Tarjetas centradas y con flex-wrap */
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-top: 1rem;
+    }
+    .card {
+      flex: 1 1 280px;
+      max-width: 400px;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+    .fechas li {
+      margin-bottom: 0.4rem;
+    }
+    .fechas strong {
+      font-weight: 700;
+    }
 
     .fechas li{ margin-bottom:.4rem; }
     .fechas strong{ font-weight:700; }
